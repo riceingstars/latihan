@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    /* border: none; */
+    text-decoration: none;
+  }
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 5%;  
+    /* padding: 10px 20px; */
+    background-color: brown;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    font-style: italic;
+}
+
+.navbar-nav {
+    display: flex;
+    flex: 1; /* isi ruang kosong yang sisa */
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    /* display: inline-block; */
+    font-size: 22px;
+    margin: 0 15px;
+    /* padding: 10px ; */
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(images/mobil.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.homi h1 {
+    padding: 0 4rem; 
+    max-width: 80rem;
+    font-size: 4rem;
+    color: #edeaea;
+    line-height: 1.2;
+    margin-top: 0rem;
+    text-align: center;
+}
+
+.home .homi p {
+    font-size: 25px;
+    padding: 0 10rem;
+    margin-top: 0.5rem;
+    line-height: 1.2;
+    font-weight: 100;
+    color: aliceblue;
+    padding-bottom: 40rem;
+    text-align: justify;
+    justify-content: center;
+}
+
+.about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about h2,
+.table h2,
+.list h2,
+.galeri h2,
+.hubungi h2,
+.isiform h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    width: 40rem;
+    border-radius: 10px;
+}
+
+.isiabout {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.isiabout h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.isiabout p {
+    font-size: 16px;
+}
+
+.isi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    flex-wrap: wrap; /* supaya fleksibel u/ layar kecil */
+}
+
+.table {
+    margin: 20px;
+}
+
+
+table {
+    border-collapse: collapse; /* menghilangkan double border */
+    /* width: 100%; */
+    width: 800px;/* batasi lebar maksimum */
+    font-size: 30px;
+}
+
+th, td {
+    border: 1px solid rgb(59, 64, 199);
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: brown;
+}
+
+.list-item {
+    display: flex; /* elemen sejajar horizontal */
+    justify-content: space-evenly; /* memberi jarak yg sama antar elemen */
+    flex-wrap: nowrap;/* cegah elemen turun ke baris bawah */
+    align-items: flex-start;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.list-item ul {
+    padding: 10px;
+    margin: 0px 10px;  /* jarak antar col */
+    width: 10%;     /* lebar setiap col */
+}
+
+
+.homi img {
+    width: 100%;
+    height: 100%;
+}
+
+.galeri {
+    padding: 2opx;
+    text-align: center;
+}
+
+
+.isigaleri {
+    display: flex;
+    flex-wrap: wrap; /* baris kebawah di layar kecil */
+    justify-content: center;
+    gap: 20px; /* jarak antar gambar */
+}
+
+.images {
+    /* background-color: gray; */
+    padding: 10px;
+    border-radius: 8px;
+    width: 250px; /* lebar tiap gambar */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(2, 2, 2, 0.1);
+}
+
+.images img {
+    width: 100%; /* gambar penuh di div */
+    height: 200px; /* ukuran gambar sama */
+    object-fit: cover; /* jaga rasio gambar tetap sama */
+}
+
+.images p {
+    margin-top: 10px;
+    font-size: 0,5em;
+    text-align: center;
+}
+
+.video-galeri {
+    padding: 20px;
+}
+
+.isivideo,
+.isiytb,
+.isiaudio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.isivideo video,
+.isiytb .ytb iframe {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.ytb {
+    flex: 1 1 300px;
+    max-width: 400px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.audio 
+
+.hubungi {
+    text-align: center;
+}
+
+.isihubungi {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.isiform  {
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+} 
+
+.input label {
+    margin-bottom: 5px;
+
+}
+
+.input input {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 100%;
+} 
+
+
+label {
+    display: block;
+}
+
+input:invalid,
+input:required:invalid {
+    border: none;
+    outline: 2px solid red;
+}
+
+input:valid
+input:required {
+    border: 1px solid black;
+    outline: inherit;
+}
+
+footer {
+    background-color: brown;
+    text-align: center;
+    padding: 0.8rem 0 2rem;
+    margin-top: 3rem;
+}
+
+
+footer .links {
+    /* margin-bottom: 1rem; */
+    margin-top: 1rem;
+}
+
+footer .links a {
+    color: white;
+    padding: 2rem 1rem;
+}
+
+footer .links a:hover,
+.navbar .navbar-nav a:hover {
+    color: black;
+}
+
+footer .credit .links a {
+    font-size: 18px;
+}
+
+footer .credit a{
+    color: white;
+    font-weight: 700;
+}
+
+.credit p {
+    padding-top: 10px;
+}
+
+@media (max-width: 768px){
+
+    html {
+        font-size: 65%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        justify-content: flex-start;  /* untk layar kecil kembali ke kiri menunya */
+    }
+
+    .navbar-nav a {
+        /* display: block; */
+        margin: 1.4rem;
+        font-size: 14px;
+      }
+    
+    .navbar-logo {
+        /* display: block;
+        margin-bottom: 10px; */
+        font-size: 20px;
+    }
+
+    .home .homi p {
+        font-size: 12px;
+    }
+
+    table, th, td {
+        display: block;
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .layanan .list h2 {
+        font-size: 25px;
+    }
+
+    .list-item {
+        flex-direction: column; /* berubah sejajar vertikal */
+        font-size: 16px;
+    }
+
+    .list-item ul {
+        width: 100%;/* lebar penuh pada setiap list */
+        margin-bottom: 10px;
+    }
+
+    .images {
+        width: 100%;
+    }
+
+    .images img {
+        height: 200px;
+    }
+
+    .isiytb {
+        flex-direction: column;
+    }
+
+    .ytb {
+        width: 100%;
+    }
+
+    .isihubungi p,
+    .isihubungi ul {
+        font-size: 12px;
+    }
+
+    .credit p {
+        font-size: 10px;
+    }
+
+
+}
+
+@media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar-logo {
+        font-size: 18px;
+    }
+
+    .navbar-nav a {
+        font-size: 14px;
+        margin: 3px 5px; /* jarak gap */
+    }
+  }

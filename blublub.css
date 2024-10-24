@@ -7,7 +7,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: #5B99C2;
     position: fixed;
     top: 0;
@@ -253,3 +252,5 @@ margin-top: 10%;
       padding: 0.8rem 0 2rem;
       margin-top: 4rem;
     }
+
+    

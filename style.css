@@ -1,438 +1,255 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    /* border: none; */
-    text-decoration: none;
-  }
-
 body {
-    font-family: sans-serif;
-}
+    background-color: lightblue;
+    
+  }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4rem 5%;  
-    /* padding: 10px 20px; */
-    background-color: brown;
+
+    background-color: #5B99C2;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
-    
+    float: left;
+    padding: 14px 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.navbar .navbar-logo {
-    font-size: 2rem;
-    font-weight: 700;
-    color: white;
-    font-style: italic;
+.navbar img  {
+  float: right;
+  width: 45px;
+  height: 45px;
+  margin-left: 10%;
+ 
 }
 
 .navbar-nav {
-    display: flex;
-    flex: 1; /* isi ruang kosong yang sisa */
+    display:flex;
+    flex: 1;
     justify-content: center;
+
 }
+
 
 .navbar a {
     color: white;
-    /* display: inline-block; */
-    font-size: 22px;
+    font-size: 30px;
     margin: 0 15px;
-    /* padding: 10px ; */
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
 }
 
+.navbar a:hover {
+    background-color:#3d78a0;
+
+
+}
 .home {
     min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background-image: url(images/mobil.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(images/fishdekstopwallpaper.jpg);
     background-size: 100% 100%;
+    margin-top: 0%;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-top: 70px;
+   
 }
-
+  
 .homi h1 {
-    padding: 0 4rem; 
+  
     max-width: 80rem;
     font-size: 4rem;
     color: #edeaea;
     line-height: 1.2;
-    margin-top: 0rem;
-    text-align: center;
-}
-
-.home .homi p {
-    font-size: 25px;
-    padding: 0 10rem;
-    margin-top: 0.5rem;
-    line-height: 1.2;
-    font-weight: 100;
-    color: aliceblue;
-    padding-bottom: 40rem;
+    margin-top:0rem;
     text-align: justify;
-    justify-content: center;
+    width: 50%; 
+    display: inline-block; 
+    margin: 5%;
+    
 }
 
-.about {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.about h2,
-.table h2,
-.list h2,
-.galeri h2,
-.hubungi h2,
-.isiform h2 {
-    font-size: 2rem;
-    text-align: center;
-    padding: 2rem 0;
-}
-
-.row {
+.content {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-}
-
-.about-img img {
-    max-width: 100%;
-    height: auto;
-    width: 40rem;
-    border-radius: 10px;
-}
-
-.isiabout {
-    max-width: 600px;
-    text-align: justify;
-}
-
-.isiabout h3 {
-    font-size: 25px;
-    margin: 10px 0;
-}
-
-.isiabout p {
-    font-size: 16px;
-}
-
-.isi {
-    display: flex;
     justify-content: center;
-    align-items: flex-start;
+    margin-top: 10%;
+    border-top: 1pt;
+  }
+  
+  .product {
     margin: 20px;
-    flex-wrap: wrap; /* supaya fleksibel u/ layar kecil */
-}
-
-.table {
-    margin: 20px;
-}
-
-
-table {
-    border-collapse: collapse; /* menghilangkan double border */
-    /* width: 100%; */
-    width: 800px;/* batasi lebar maksimum */
-    font-size: 30px;
-}
-
-th, td {
-    border: 1px solid rgb(59, 64, 199);
-    padding: 8px;
-    text-align: center;
-}
-
-th {
-    background-color: brown;
-}
-
-.list-item {
-    display: flex; /* elemen sejajar horizontal */
-    justify-content: space-evenly; /* memberi jarak yg sama antar elemen */
-    flex-wrap: nowrap;/* cegah elemen turun ke baris bawah */
-    align-items: flex-start;
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-
-.list-item ul {
+    width: 200px;
+    height: 200px;
     padding: 10px;
-    margin: 0px 10px;  /* jarak antar col */
-    width: 10%;     /* lebar setiap col */
-}
-
-
-.homi img {
+  }
+  
+  .product img {
     width: 100%;
     height: 100%;
-}
-
-.galeri {
-    padding: 2opx;
-    text-align: center;
-}
-
-
-.isigaleri {
-    display: flex;
-    flex-wrap: wrap; /* baris kebawah di layar kecil */
-    justify-content: center;
-    gap: 20px; /* jarak antar gambar */
-}
-
-.images {
-    /* background-color: gray; */
-    padding: 10px;
-    border-radius: 8px;
-    width: 250px; /* lebar tiap gambar */
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(2, 2, 2, 0.1);
-}
-
-.images img {
-    width: 100%; /* gambar penuh di div */
-    height: 200px; /* ukuran gambar sama */
-    object-fit: cover; /* jaga rasio gambar tetap sama */
-}
-
-.images p {
+    border-radius: 10px;
+  }
+  
+  .product h2 {
+    font-size: 18px;
     margin-top: 10px;
-    font-size: 0,5em;
+
+  }
+  
+  .product p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+.paragraf {
+  font-size: 14px;
+  margin-top: 10%;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: justify;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10pt;
+  border-width: 3px;
+
+
+}
+
+.product-list {
+margin-bottom: 10%;
+
+
+}
+.product-list h2 {
+  text-align: left;
+  margin-top: 8%;
+  margin-left: 2%;
+
+}
+.product-list li {
+
+  font-size: 20px;
+  text-align: center;
+  text-align: justify;
+  margin: 10px;
+
+}
+.table {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 20%;
+  margin-top: 10%;
+  font-size: large;
+  text-align: center;
+}
+
+
+ #product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    margin-top: 10%;
+  }
+  
+  #product-table thead {
+color: #edeaea;
+
+  }
+
+  #product-table th, #product-table td {
+    border: 1px solid black;
+    padding: 8px;
     text-align: center;
+  }
+  
+  #product-table th {
+    background-color: #5B99C2;}
+
+h3 {
+text-align: center;
+margin-top: 10%;
+
+}
+h4 {  
+text-align: center;
+font-family: Verdana;
+font-size: medium;
+margin-top: 10%;
 }
 
-.video-galeri {
-    padding: 20px;
+
+.isivideo {
+  float: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 1000px;
+  margin-right: 100px;
+  margin-left: 190px;
+  flex: 1 1 300px;
+  max-width: 400px;
+
+
 }
 
-.isivideo,
-.isiytb,
-.isiaudio {
-    display: flex;
+.isiyt {
+
+  display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-}
-
-.isivideo video,
-.isiytb .ytb iframe {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-}
-
-.ytb {
-    flex: 1 1 300px;
-    max-width: 400px;
-    padding: 10px;
-    overflow: hidden;
-}
-
-.audio 
-
-.hubungi {
-    text-align: center;
-}
-
-.isihubungi {
-    text-align: center;
-    padding-bottom: 2rem;
-    font-size: 20px;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.isiform  {
-    width: 100%;
-    max-width: 800px;
-    text-align: left;
+    margin-left: 6%;
+    margin-bottom: 10%;
 
 }
-
-
-.input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-
-} 
-
-.input label {
-    margin-bottom: 5px;
-
+.isiyt .ytb iframe {
+  width: 100%;
+  height: auto;
+  padding: 10px;
 }
 
-.input input {
-    padding: 10px;
-    border-radius: 4px;
-    font-size: 18px;
-    width: 100%;
-} 
+.yt {
+  flex: 1 1 300px;
+  max-width: 400px;
+  padding: 10px;
+  overflow: hidden;
 
-
-label {
-    display: block;
 }
-
-input:invalid,
-input:required:invalid {
-    border: none;
-    outline: 2px solid red;
-}
-
-input:valid
-input:required {
-    border: 1px solid black;
-    outline: inherit;
-}
-
-footer {
-    background-color: brown;
-    text-align: center;
-    padding: 0.8rem 0 2rem;
-    margin-top: 3rem;
-}
-
-
-footer .links {
-    /* margin-bottom: 1rem; */
-    margin-top: 1rem;
-}
-
-footer .links a {
-    color: white;
-    padding: 2rem 1rem;
-}
-
-footer .links a:hover,
-.navbar .navbar-nav a:hover {
-    color: black;
-}
-
-footer .credit .links a {
-    font-size: 18px;
-}
-
-footer .credit a{
-    color: white;
-    font-weight: 700;
-}
-
-.credit p {
-    padding-top: 10px;
-}
-
-@media (max-width: 768px){
-
-    html {
-        font-size: 65%;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .navbar-nav {
-        justify-content: flex-start;  /* untk layar kecil kembali ke kiri menunya */
-    }
-
-    .navbar-nav a {
-        /* display: block; */
-        margin: 1.4rem;
-        font-size: 14px;
-      }
-    
-    .navbar-logo {
-        /* display: block;
-        margin-bottom: 10px; */
-        font-size: 20px;
-    }
-
-    .home .homi p {
-        font-size: 12px;
-    }
-
-    table, th, td {
-        display: block;
-        width: 100%;
-        font-size: 18px;
+  
+    #contact-form {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
     }
     
-    .layanan .list h2 {
-        font-size: 25px;
+    #contact-form label {
+      margin: 10px 0 5px;
+    }
+    
+    #contact-form input, 
+    #contact-form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
 
-    .list-item {
-        flex-direction: column; /* berubah sejajar vertikal */
-        font-size: 16px;
+  
+    footer {
+      background-color: #5B99C2;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      color: #edeaea;
+      padding: 0.8rem 0 2rem;
+      margin-top: 4rem;
     }
-
-    .list-item ul {
-        width: 100%;/* lebar penuh pada setiap list */
-        margin-bottom: 10px;
-    }
-
-    .images {
-        width: 100%;
-    }
-
-    .images img {
-        height: 200px;
-    }
-
-    .isiytb {
-        flex-direction: column;
-    }
-
-    .ytb {
-        width: 100%;
-    }
-
-    .isihubungi p,
-    .isihubungi ul {
-        font-size: 12px;
-    }
-
-    .credit p {
-        font-size: 10px;
-    }
-
-
-}
-
-@media (max-width: 450px) {
-    html {
-      font-size: 55%;
-    }
-
-    .navbar {
-        padding: 5px;
-    }
-
-    .navbar-logo {
-        font-size: 18px;
-    }
-
-    .navbar-nav a {
-        font-size: 14px;
-        margin: 3px 5px; /* jarak gap */
-    }
-  }

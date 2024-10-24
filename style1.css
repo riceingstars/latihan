@@ -1,0 +1,103 @@
+/* style.css */
+
+/* Reset dasar untuk menghilangkan margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header */
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+  
+  header nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Tabel */
+  #product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  #product-table th, #product-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #product-table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Daftar Produk */
+  .product-list {
+    list-style-type: disc;
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  
+  /* Formulir */
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  
+  #contact-form label {
+    margin: 10px 0 5px;
+  }
+  
+  #contact-form input, 
+  #contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Media */
+  iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }

@@ -1,0 +1,56 @@
+header {
+    background-color: #b090d8;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.icons  {
+    margin-left: 10%;
+    
+}
+
+.fa-brands.fa-youtube.fa-3x {
+    color: red;
+}
+
+.fa-brands.fa-instagram.fa-3x {
+    color: rgb(238, 74, 197);
+
+}
+
+.box-model p
+{
+    width: 50%;
+    padding: 15px;
+    border: 10px solid #b090d8;
+    margin: 50px auto;
+    background-color: blanchedalmond;
+    text-align: justify;
+    position: relative;
+    text-align: center;
+
+}
+
+.outline {
+    text-align: center;
+    color: black;
+    padding: 15px;
+    outline-style: dotted;
+    outline-color: #b090d8;
+    outline-width: 5px;
+    outline-offset: 10px;
+    background-color:blanchedalmond ;
+    margin: 50px auto;
+    width: 50%;
+    position: relative;
+
+
+
+}
+
+.listmakanan {
+
+    
+}

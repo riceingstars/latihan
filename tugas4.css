@@ -236,25 +236,19 @@ h3 {
   color: #071448;
 
 }
+
 .isivideo {
-  float: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 1000px;
-  margin-right: 100px;
-  margin-left: 190px;
-  flex: 1 1 300px;
-  max-width: 400px;
- 
+  text-align: center;
+  margin-bottom: 20px;
+
 }
 
 .isiyt {
-
+text-align: center;
   display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    margin-left: 6%;
+    gap: 10px;
     margin-bottom: 10%;
 
 }
@@ -269,6 +263,7 @@ h3 {
   max-width: 400px;
   padding: 10px;
   overflow: hidden;
+
 
 }
   /* ini form */
@@ -302,17 +297,30 @@ h3 {
   
     }
 
+  button {
+    font-size: medium;
+    font-weight: bold;
+
+  }
+button:hover {
+  color: #005a87
+
+}
+
   .icons  {
     text-align: right;
     margin-top: 30px;
-   
+    transition: color 0.3s;
   }
+  
+ 
   
 
   .fa-brands.fa-youtube.fa-3x {
       color: rgb(139, 6, 6);
   }
   
+
   .fa-brands.fa-instagram.fa-3x {
       color: rgb(146, 20, 115);
   
